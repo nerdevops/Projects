@@ -1,6 +1,6 @@
 version: "3"
 
-# More info at https://github.com/pi-hole/docker-pi-hole/ and https://docs.pi-hole.net/
+# Mais info Aqui: https://github.com/pi-hole/docker-pi-hole/ and https://docs.pi-hole.net/
 services:
   pihole:
     container_name: pihole
@@ -12,13 +12,7 @@ services:
       - "80:80/tcp"
     environment:
       TZ: 'America/Chicago'
-      # WEBPASSWORD: 'set a secure password here or it will be random'
-    # Volumes store your data between container upgrades
-    volumes:
-      - './etc-pihole/:/etc/pihole/'
-      - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
-    # Recommended but not required (DHCP needs NET_ADMIN)
-    #   https://github.com/pi-hole/docker-pi-hole#note-on-capabilities
+      WEBPASSWORD: 'NerdevOps'
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
