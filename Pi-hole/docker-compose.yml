@@ -11,8 +11,8 @@ services:
       - "67:67/udp"
       - "80:80/tcp"
     environment:
-      TZ: 'America/Chicago'
-      WEBPASSWORD: 'NerdevOps'
+      TZ: 'America/Sao_Paulo'
+      WEBPASSWORD: 'NerdevOps' ## Esolha a senha que quiser Substitua 'NerdevOps'
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
