@@ -24,8 +24,9 @@ services:
     volumes:
       - ./$PWD:/downloads
 ```
-2. Adicionar o stack
+2. Adicionar o stack no Portainer
 3. Abrir a pagina http://IP-Maquina-Virtual:8080
+4. Aproveitar
 
-User: admin
-Pass: adminadmin
+- User: admin
+- Pass: adminadmin
