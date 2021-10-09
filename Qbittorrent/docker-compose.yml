@@ -11,4 +11,4 @@ services:
       - 6881:6881/tcp
       - 6881:6881/udp
     volumes:
-      - ./$PWD:/downloads
+      - /home/ubuntu/downloads:/downloads
