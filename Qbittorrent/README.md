@@ -22,7 +22,7 @@ services:
       - 6881:6881/tcp
       - 6881:6881/udp
     volumes:
-      - ./$PWD:/downloads
+      - /home/ubuntu/downloads:/downloads
 ```
 2. Adicionar o stack no Portainer
 3. Abrir a pagina http://IP-Maquina-Virtual:8080
