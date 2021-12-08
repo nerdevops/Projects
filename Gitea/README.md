@@ -1,7 +1,7 @@
 # Docker Gitea
 
 <p align="center">
-<a href="https://gitea.io/en-us/"><img src="https://gitea.io/images/gitea.png" width="150" height="255" alt="Gitea"></a><br/>
+<a href="https://gitea.io/en-us/"><img src="https://gitea.io/images/gitea.png" width="280" height="280" alt="Gitea"></a><br/>
 </p>
 
 
