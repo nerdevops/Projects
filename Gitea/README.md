@@ -19,7 +19,7 @@ networks:
 
 services:
   server:
-    image: gitea/gitea:1.15.7
+    image: gitea/gitea
     container_name: gitea
     environment:
       - USER_UID=1000
