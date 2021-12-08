@@ -28,12 +28,14 @@ services:
     networks:
       - gitea
     volumes:
-      - ./data:/data
+      - data_gitea:/data
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
       - "3000:3000"
       - "2234:22"
+volumes:
+  data_gitea: {}
 ```
 2. Correr `docker-compose up -d` para criar e startar o getea
 3. Configurar via Gui
