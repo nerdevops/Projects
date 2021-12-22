@@ -1,4 +1,4 @@
-# Docker Gitea
+# Docker Nextcloud
 
 <p align="center">
 <a href="https://nextcloud.com/"><img src="https://download.logo.wine/logo/Nextcloud/Nextcloud-Logo.wine.png" width="300" height="200" alt="Gitea"></a><br/>
