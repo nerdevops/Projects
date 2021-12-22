@@ -1,7 +1,7 @@
 # Docker Gitea
 
 <p align="center">
-<a href="https://nextcloud.com/"><img src="https://download.logo.wine/logo/Nextcloud/Nextcloud-Logo.wine.png" width="100" height="200" alt="Gitea"></a><br/>
+<a href="https://nextcloud.com/"><img src="https://download.logo.wine/logo/Nextcloud/Nextcloud-Logo.wine.png" width="300" height="200" alt="Gitea"></a><br/>
 </p>
 
 
