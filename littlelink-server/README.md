@@ -1,7 +1,7 @@
 # Docker littlelink-server
 
 <p align="center">
-<a href="https://github.com/techno-tim/littlelink-server"><img src="Example.PNG" width="300" height="200" alt="littlelink-server" img="border-radius: 50%"></a><br/>
+<a href="https://github.com/techno-tim/littlelink-server"><img src="Example.PNG" alt="littlelink-server" img="border-radius: 50%"></a><br/>
 </p>
 
 
