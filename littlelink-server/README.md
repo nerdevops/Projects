@@ -1,0 +1,74 @@
+# Docker littlelink-server
+
+<p align="center">
+<a href="https://github.com/techno-tim/littlelink-server"><img src="https://user-images.githubusercontent.com/1322205/174909247-2515ab5c-fd39-475d-b5dc-9c0a1ea20d6e.png" width="300" height="200" alt="littlelink-server"></a><br/>
+</p>
+
+
+## Como Começar
+
+1. Clonar o projecto para sua maquina virtual:
+[Docker-compose](https://docs.docker.com/compose/install/) example:
+
+```yaml
+version: "3.0"
+services:
+  littlelink-server:
+    image: ghcr.io/techno-tim/littlelink-server:latest
+    # dockerhub is also supported timothystewart6/littlelink-server
+    # image: timothystewart6/littlelink-server:latest
+    container_name: littlelink-server
+    environment:
+      - META_TITLE=
+      - META_DESCRIPTION=
+      - META_AUTHOR=
+      - META_KEYWORDS=
+      - LANG=en
+      - META_INDEX_STATUS=all
+      - OG_SITE_NAME=
+      - OG_TITLE=
+      - OG_DESCRIPTION=
+      - OG_URL=
+      - OG_IMAGE=
+      - OG_IMAGE_WIDTH=400
+      - OG_IMAGE_HEIGHT=400
+      - GA_TRACKING_ID=G-XXXXXXXXXX
+      - THEME=Light
+      - FAVICON_URL=
+      - AVATAR_URL=
+      - AVATAR_2X_URL=
+      - AVATAR_ALT=
+      - NAME=
+      - BIO=
+      # use ENV variable names for order, listed buttons will be boosted to the top
+      - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,LINKED_IN,DISCORD,FACEBOOK,TIKTOK,PATREON,GEAR,DOCUMENTATION
+      # you can render an unlimited amount of custom buttons by adding 
+      # the CUSTOM_BUTTON_* variables and by using a comma as a separator.
+      - GITHUB=
+      - TWITTER=
+      #- INSTAGRAM=
+      #- LINKED_IN=
+      - YOUTUBE=
+      - TWITCH=
+      #- DISCORD=
+      #- TIKTOK=
+      #- FACEBOOK=
+      #- PATREON=
+      - FOOTER=
+    ports:
+      - 8080:3000
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+```
+2. Modificar o Docker-Compose com seus Dados
+2. Correr `docker-compose up -d` para criar e startar o littlelink-server
+3. Abrir a aplicação no browser
+4. Podemos Adicionar Botões Customs com as variaceis:
+      - CUSTOM_BUTTON_TEXT=Documentation,Recommended Gear
+      - CUSTOM_BUTTON_URL=
+      - CUSTOM_BUTTON_COLOR=#000000
+      - CUSTOM_BUTTON_TEXT_COLOR=#ffffff
+      - CUSTOM_BUTTON_ALT_TEXT=Tech documentation site for my videos and more
+      - CUSTOM_BUTTON_NAME=DOCUMENTATION
+      - CUSTOM_BUTTON_ICON=fas file-alt

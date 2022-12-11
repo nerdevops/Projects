@@ -4,5 +4,8 @@
 
 ### Projectos
 
-- Pihole
+- Gitea
 - Qbittorrent
+- NextCloud
+- Pi-hole
+- littlelink-server
